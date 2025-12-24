@@ -28,7 +28,7 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/auth", userRoutes);
 app.use("/api/admin", adminRoutes);
 
-// ⚡ Root route (always works, even if DB fails)
+//  Root route (always works, even if DB fails)
 app.get("/", (req, res) => {
   res.send("Book Store Server is running!");
 });
